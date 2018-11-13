@@ -18,7 +18,7 @@
         "extension.cpp",
         "sfloat_trigonometric.c",
         "shims.d.ts",
-        "enum.d.ts"
+        "enums.d.ts"
     ],
     "testFiles": [
         "test.ts"
