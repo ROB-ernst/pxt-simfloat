@@ -4,7 +4,7 @@ declare namespace sfloat {
     /**
      * Perform soft-float conversion
      */
-    //% blockId=SoftFloat_IntToSFloat block="Integer to SoftFloat" shim=sfloat::IntToSFloat
+    //% blockId=sfloat_IntToSFloat block="Integer to SoftFloat" shim=sfloat::IntToSFloat
     function IntToSFloat(x: int32): int32;
 }
 
