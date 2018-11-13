@@ -9,15 +9,15 @@
     "files": [
         "README.md",
         "main.ts",
-    	"sfloat_const.h",
+        "sfloat_const.h",
         "sfloat_common.h",
         "int_roots.c",
         "int_roots.h",
-		"simulate_float.c",
-		"simulate_float.h",
-		"extension.cpp",
-		"sfloat_trigonometric.c",
-		"shims.d.ts"
+        "simulate_float.c",
+        "simulate_float.h",
+        "extension.cpp",
+        "sfloat_trigonometric.c",
+        "shims.d.ts"
     ],
     "testFiles": [
         "test.ts"

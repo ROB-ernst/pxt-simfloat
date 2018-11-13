@@ -2,10 +2,10 @@
 declare namespace sfloat {
 
     /**
-    * Perform soft-float conversion
-    */
+     * Perform soft-float conversion
+     */
     //% blockId=SoftFloat_IntToSFloat block="Integer to SoftFloat" shim=sfloat::IntToSFloat
-    function IntToSFloat(x: number): number;
+    function IntToSFloat(x: int32): int32;
 }
 
 // Auto-generated. Do not edit. Really.
