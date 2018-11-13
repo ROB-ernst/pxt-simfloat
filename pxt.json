@@ -9,10 +9,10 @@
     "files": [
         "README.md",
         "main.ts",
-		"sfloat_const.h",
-		"sfloat_common.h",
-		"int_roots.c",
-		"int_roots.h"
+    		"sfloat_const.h",
+        "sfloat_common.h",
+        "int_roots.c",
+        "int_roots.h"
     ],
     "testFiles": [
         "test.ts"
