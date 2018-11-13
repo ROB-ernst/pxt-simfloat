@@ -9,8 +9,8 @@
     "files": [
         "README.md",
         "main.ts",
-		"sfloat_const.h",
-		"sfloat_common.h"
+        "sfloat_const.h",
+        "sfloat_common.h"
     ],
     "testFiles": [
         "test.ts"
