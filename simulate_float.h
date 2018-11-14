@@ -7,6 +7,10 @@
 #ifndef _SIMULATE_FLOAT_H_
 #define _SIMULATE_FLOAT_H_
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include "sfloat_const.h"
 #include "sfloat_common.h"
 
@@ -57,4 +61,9 @@ simulate_float sfloat_asin(simulate_float value);
 simulate_float sfloat_acos(simulate_float value);
 simulate_float sfloat_atan(simulate_float value);
 simulate_float sfloat_atan2(simulate_float y, simulate_float x);
+
+#ifdef __cplusplus
+}
+#endif
+
 #endif

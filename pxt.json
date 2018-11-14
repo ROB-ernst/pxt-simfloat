@@ -1,6 +1,6 @@
 {
     "name": "pxt-simfloat",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "",
     "dependencies": {
         "core": "*",
@@ -8,21 +8,20 @@
     },
     "files": [
         "README.md",
-        "main.ts",
         "sfloat_const.h",
         "sfloat_common.h",
-        "int_roots.c",
         "int_roots.h",
-        "simulate_float.c",
         "simulate_float.h",
-        "extension.cpp",
+        "int_roots.c",
+        "simulate_float.c",
         "sfloat_trigonometric.c",
+        "extension.cpp",
         "shims.d.ts",
         "enums.d.ts"
     ],
     "testFiles": [
         "test.ts"
     ],
-    "public": false,
+    "public": true,
     "installedVersion": "workspace:c19f6d3e-3838-4f36-ce2d-dffea6f77797"
 }
