@@ -11,25 +11,37 @@ namespace sfloat {
         return int_to_sfloat(x);
     }
 	
+    /**
+    * Add two soft floats
+    */
 	//% blockId=sfloat_add block="Add two SoftFloats %x %y"
 	int add(int x, int y)
 	{
 		return sfloat_add(x, y);
 	}
 	
-	//% blockId=sfloat_add block="Multiply two SoftFloats %x %y"
-	int multipy(int x, int y)
+    /**
+    * Multiply two soft floats
+    */
+	//% blockId=sfloat_multiply block="Multiply %x and %y"
+	int multiply(int x, int y)
 	{
 		return sfloat_multiply(x, y);
 	}
 	
-	//% blockId=sfloat_add block="Subtract two SoftFloats %x %y"
+    /**
+    * Subtract two soft floats
+    */
+	//% blockId=sfloat_minus block="subtract %x from %y"
 	int minus(int x, int y)
 	{
 		return sfloat_minus(x, y);
 	}
-	
-	//% blockId=sfloat_add block="Divide two SoftFloats %x %y"
+
+	/**
+    * Divide two soft floats
+    */
+	//% blockId=sfloat_div block="divide %x by %y"
 	int div(int x, int y)
 	{
 		return sfloat_divide(x, y);
