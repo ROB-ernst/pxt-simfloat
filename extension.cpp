@@ -113,8 +113,8 @@ namespace sfloat {
 	/**
     * Get arcus tangens 2 of two soft float
     */
-	//% blockId=sfloat_atan block="atan2 of y %y|and x %x"
-	int atan(int y, int x)
+	//% blockId=sfloat_atan2 block="atan2 of y %y|and x %x"
+	int atan2(int y, int x)
 	{
 		return sfloat_atan2(y, x);
 	}
