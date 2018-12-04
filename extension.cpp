@@ -44,7 +44,8 @@ namespace sfloat {
 	//% blockId=sfloat_div block="divide x %x|by y %y"
 	int div(int x, int y)
 	{
-		return sfloat_divide(x, y);
+		float c = (*((float *)&x)) / (*((float *)&y));
+		return *((int *)(&c));
 	}
 	
 	/**
