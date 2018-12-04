@@ -39,13 +39,22 @@ namespace sfloat {
 	}
 
 	/**
+    * Divide two integers
+    */
+	//% blockId=sfloat_div_float block="divide x %x|by y %y (using floats)"
+	int div_float(int x, int y)
+	{
+		float c = (*((float *)&x)) / (*((float *)&y));
+		return *((int *)(&c));
+	}
+
+    /**
     * Divide two soft floats
     */
 	//% blockId=sfloat_div block="divide x %x|by y %y"
 	int div(int x, int y)
 	{
-		float c = (*((float *)&x)) / (*((float *)&y));
-		return *((int *)(&c));
+		return sfloat_div(x,y);
 	}
 	
 	/**
