@@ -54,7 +54,7 @@ namespace sfloat {
 	//% blockId=sfloat_div block="divide x %x|by y %y"
 	int div(int x, int y)
 	{
-		return sfloat_div(x,y);
+		return sfloat_divide(x,y);
 	}
 	
 	/**
