@@ -25,9 +25,9 @@ namespace sfloat {
     * Multiply two soft floats
     */
 	//% blockId=sfloat_add_f block="[F] add x %x|and y %y"
-	int multiply(int x, int y)
+	int add_f(int x, int y)
 	{
-		float c = ((float*)(&x)) + ((float*)(&y));
+		float c = *((float*)(&x)) + *((float*)(&y));
 		return *((int *)(&c));
 	}
 	
@@ -44,9 +44,9 @@ namespace sfloat {
     * Multiply two soft floats
     */
 	//% blockId=sfloat_multiply_f block="[F] multiply x %x|and y %y"
-	int multiply(int x, int y)
+	int multiply_f(int x, int y)
 	{
-		float c = ((float*)(&x)) * ((float*)(&y));
+		float c = *((float*)(&x)) * *((float*)(&y));
 		return *((int *)(&c));
 	}
 	
@@ -63,9 +63,9 @@ namespace sfloat {
     * Subtract two soft floats
     */
 	//% blockId=sfloat_minus_f block="[F] subtract y %y|from x %x"
-	int multiply(int x, int y)
+	int minus_f(int x, int y)
 	{
-		float c = ((float*)(&x)) - ((float*)(&y));
+		float c = *((float*)(&x)) - *((float*)(&y));
 		return *((int *)(&c));
 	}
 
@@ -73,7 +73,7 @@ namespace sfloat {
     * Divide two soft floats
     */
 	//% blockId=sfloat_div_f block="[F] divide x %x|by y %y"
-	int div_float(int x, int y)
+	int div_f(int x, int y)
 	{
 		float c = (*((float *)&x)) / (*((float *)&y));
 		return *((int *)(&c));
@@ -101,7 +101,7 @@ namespace sfloat {
     * Get sine of a soft float
     */
 	//% blockId=sfloat_sin_f block="[F] sine of radians %x"
-	int sin(int x)
+	int sin_f(int x)
 	{
 		float c = sin(*((float *)&x));
 		return *((int *)(&c));
@@ -120,7 +120,7 @@ namespace sfloat {
     * Get cosine of a soft float
     */
 	//% blockId=sfloat_cos_f block="[F] cosine of radians %x"
-	int sin(int x)
+	int cos_f(int x)
 	{
 		float c = cos(*((float *)&x));
 		return *((int *)(&c));
@@ -139,7 +139,7 @@ namespace sfloat {
     * Get tangens of a soft float
     */
 	//% blockId=sfloat_tan_f block="[F] tangens of radians %x"
-	int tan(int x)
+	int tan_f(int x)
 	{
 		float c = tan(*((float *)&x));
 		return *((int *)(&c));
@@ -158,9 +158,9 @@ namespace sfloat {
     * Get square root of a soft float
     */
 	//% blockId=sfloat_sqrt_f block="[F] sqrt of x %x"
-	int sqrt(int x)
+	int sqrt_f(int x)
 	{
-		rfloat c = sqrt(*((float *)&x));
+		float c = sqrt(*((float *)&x));
 		return *((int *)(&c));
 	}
 	
@@ -177,9 +177,9 @@ namespace sfloat {
     * Get arcus sine of a soft float
     */
 	//% blockId=sfloat_asin_f block="[F] arcsin of x %x"
-	int asin(int x)
+	int asin_f(int x)
 	{
-		rfloat c = asin(*((float *)&x));
+		float c = asin(*((float *)&x));
 		return *((int *)(&c));
 	}
 	
@@ -196,9 +196,9 @@ namespace sfloat {
     * Get arcus cosine of a soft float
     */
 	//% blockId=sfloat_acos_f block="[F] arccos of x %x"
-	int acos(int x)
+	int acos_f(int x)
 	{
-		rfloat c = acos(*((float *)&x));
+		float c = acos(*((float *)&x));
 		return *((int *)(&c));
 	}
 	
@@ -215,9 +215,9 @@ namespace sfloat {
     * Get arcus tangens of a soft float
     */
 	//% blockId=sfloat_atan_f block="[F] arctan of x %x"
-	int atan(int x)
+	int atan_f(int x)
 	{
-		rfloat c = atan(*((float *)&x));
+		float c = atan(*((float *)&x));
 		return *((int *)(&c));
 	}
 	
